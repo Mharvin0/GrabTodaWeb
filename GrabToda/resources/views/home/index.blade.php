@@ -29,7 +29,7 @@
         <li class="link-item"><a href="#services">Services</a></li>
         <li class="link-item"><a href="#about">About</a></li>
         <li class="link-item"><a href="#payment">Payment</a></li>
-        <li class="link-item"><a href="#profile">Book Now</a></li>
+        <li class="link-item"><a href="#profile">Profile</a></li>
     </ul>
 </nav>
 </header>
