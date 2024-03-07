@@ -21,7 +21,8 @@ use App\Http\Controllers\HomeController;
     //    return view('welcome');
     //});
     Route::get('/', [HomeController::class, 'index']);
-    Route::get('/booking', [BookNowController::class, 'book'])->name('booking');
+    Route::get('/booking', [BookNowController::class, 'booking'])->name('booking');
+    Route::post('/booking', [BookNowController::class, 'booking'])->name('bookings.store');
     Route::get('/book-now', [HomeController::class, 'bookToLogin'])->name('book-now');
 
     Route::get('/dashboard', function () {

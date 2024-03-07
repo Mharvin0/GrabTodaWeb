@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<title>Travel Website</title>
+<title>GrabToda</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
         <li class="link-item"><a href="#services">Services</a></li>
         <li class="link-item"><a href="#about">About</a></li>
         <li class="link-item"><a href="#payment">Payment</a></li>
-        <li class="link-item"><a href="#booknow">Book Now</a></li>
+        <li class="link-item"><a href="#profile">Book Now</a></li>
     </ul>
 </nav>
 </header>
@@ -37,6 +37,12 @@
 <main class="hero-section" id="hero-section">
 <div class="hero-section-content" data-aos="fade-up">
 <h1 class="hero-section-sub-heading"></h1>
+<div class="content">
+    <h1>GrabToda</h1>
+    <p>Your instant booking around Dagupan City!</p>
+    <button class="book-now">
+           <a href="{{ route('booking') }}">Book your ride now!</a></button>
+</div>
 </div>
 
 <!-- scroll down img -->
@@ -145,12 +151,13 @@
 </section>
 
 <!-- contact section -->
-<section class="book-section" id="booknow">
+<section class="book-section" id="profile">
         <div class="book-content" data-aos="fade-up">
-            <h1 class="book-now-title">Book your travel today</h1>
-        <p class="book-now-text">Give yourself and your family a peacfull and safety ride!</p>
+            <h1 class="book-now-title">Already have an account?</h1>
+        <p class="book-now-text"></p>
         <button class="book-now">
-           <a href="{{ route('register') }}">book now</a></button>
+           <a href="{{ route('login') }}">Login here!</a></button>
+
         </div>
             <div class="bg-circle-2"></div>
             <img src="/images/booking.png" data-aos="fade-up" class="book-now-img" alt="">
