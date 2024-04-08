@@ -58,3 +58,7 @@
         });
     }
 }
+ document.getElementById('logout').addEventListener('click', function(event) {
+        localStorage.removeItem('userToken');
+        window.location.href = '/logout';
+});

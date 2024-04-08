@@ -12,4 +12,9 @@ class UserController extends Controller
         $users = User::all();
         return response()->json($users);
     }
+     public function getTotalUsers()
+    {
+        $totalUsers = User::count();
+        return response()->json(['totalUsers' => $totalUsers]);
+    }
 }

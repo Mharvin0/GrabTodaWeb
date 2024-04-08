@@ -29,7 +29,15 @@
         <li class="link-item"><a href="#services">Services</a></li>
         <li class="link-item"><a href="#about">About</a></li>
         <li class="link-item"><a href="#payment">Payment</a></li>
-        <li class="link-item"><a href="#profile">Profile</a></li>
+        <li class="link-item"><a href="#download">Download</a></li>
+        @auth
+        <li class="link-item">
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="logout-button">Logout</button>
+                </form>
+        </li>
+        @endauth
     </ul>
 </nav>
 </header>
@@ -151,12 +159,12 @@
 </section>
 
 <!-- contact section -->
-<section class="book-section" id="profile">
+<section class="book-section" id="download">
         <div class="book-content" data-aos="fade-up">
-            <h1 class="book-now-title">Already have an account?</h1>
+            <h1 class="book-now-title">Download our mobile application now for fast and easy booking!</h1>
         <p class="book-now-text"></p>
         <button class="book-now">
-           <a href="{{ route('login') }}">Login here!</a></button>
+           <a href="">Download</a></button>
 
         </div>
             <div class="bg-circle-2"></div>

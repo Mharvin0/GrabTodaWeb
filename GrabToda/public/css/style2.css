@@ -6,25 +6,27 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background: #dfe9f5;
+    background: url('/public/images/bglogin.jpg');
 }
 .wrapper{
-    width: 330px;
-    padding: 2rem 1rem;
+    max-width: 520px;
+    width: 100%;
+    padding: 2rem 2rem;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: white;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 20px 35px rgb(0, 0, 0, 0.1);
 }
 h1{
     font-size: 2rem;
-    color: #07001f;
+    color: black;
     margin-bottom: 1.2rem;
 }
 form input{
     width: 92%;
     outline: none;
+    font-size: 1rem;
     border: 1px solid #fff;
     padding:  12px 20px;
     margin-bottom: 10px;

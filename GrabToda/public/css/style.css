@@ -44,6 +44,18 @@
         text-decoration: none;
         padding: 20px;
     }
+    .link-item button.logout-button {
+        color: #fff; /* Text color */
+        text-decoration: none;
+        padding: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+    .link-item button.logout-button:hover {
+        transform: scale(1.2);
+    }
 
     .link-item:hover{
         transform: scale(1.2);
@@ -57,11 +69,20 @@
         align-items: center;
         color: white;
     }
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(22, 22, 22, 0.61);
+    }
 
     .hero-section-title{
         font-family: 'Roboto Slab', serif;
         font-weight: 300;
-        font-size: 80px;
+        font-size: 100px;
         text-align: center;
         text-transform: capitalize;
     }
@@ -79,8 +100,11 @@
     }
     .content h1{
         font-size: 120px;
-        margin-top: 100px;
-        color: #fff;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 20px;
+        margin: 0;
     }
     .content p{
         margin: 20px, auto;
@@ -121,7 +145,8 @@
         z-index: -2;
     }
 
-    .background::before, .background::after{
+    .background::before,
+    .background::after{
         content: '';
         position: absolute;
         left: 0;
@@ -467,7 +492,6 @@
         outline: none;
         border: none;
         background: #000;
-        text-transform: capitalize;
         color: #fff;
         border-radius: 20px;
         border-top-left-radius: 0;
@@ -475,6 +499,7 @@
         font-size: 18px;
         cursor: pointer;
         overflow: hidden;
+        text-decoration: none;
     }
 
     .book-now::before{
